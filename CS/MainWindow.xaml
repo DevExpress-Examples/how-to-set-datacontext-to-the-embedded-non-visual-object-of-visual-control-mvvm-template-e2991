@@ -1,0 +1,23 @@
+﻿<Window x:Class="DataContextWpfSample.MainWindow" 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:DataContextWpfSample"
+        Loaded="Window_Loaded"  
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <local:SomeVisualControl x:Name="MyVisualControl">
+            <local:SomeVisualControl.InnerDataStore>
+                <local:DataStore ConnectionString="{Binding ModelConnectionString}" />
+            </local:SomeVisualControl.InnerDataStore>
+
+            <local:SomeVisualControl.Template>
+                <ControlTemplate>
+                    <StackPanel>
+                        <TextBlock Text="DataStore Connection:" FontWeight="Bold" />
+                        <TextBlock Text="{Binding Path=InnerDataStore.ConnectionString, RelativeSource={RelativeSource Mode=TemplatedParent}}"  TextWrapping="Wrap" />
+                    </StackPanel>
+                </ControlTemplate>
+            </local:SomeVisualControl.Template>
+        </local:SomeVisualControl>
+    </Grid>
+</Window>
