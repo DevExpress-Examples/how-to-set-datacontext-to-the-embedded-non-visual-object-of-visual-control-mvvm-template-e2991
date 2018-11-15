@@ -1,3 +1,14 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [DataContextBinder.cs](./CS/DataContextBinder.cs) (VB: [DataContextBinder.vb](./VB/DataContextBinder.vb))
+* [InnerClasses.cs](./CS/InnerClasses.cs) (VB: [InnerClasses.vb](./VB/InnerClasses.vb))
+* [MainWindow.xaml](./CS/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/MainWindow.xaml))
+* [MainWindow.xaml.cs](./CS/MainWindow.xaml.cs) (VB: [MainWindow.xaml](./VB/MainWindow.xaml))
+* [Model.cs](./CS/Model.cs) (VB: [Model.vb](./VB/Model.vb))
+* [ViewClasses.cs](./CS/ViewClasses.cs) (VB: [ViewClasses.vb](./VB/ViewClasses.vb))
+* [ViewModel.cs](./CS/ViewModel.cs) (VB: [ViewModel.vb](./VB/ViewModel.vb))
+<!-- default file list end -->
 # How to set DataContext to the embedded non-visual object of visual control (MVVM template)
 
 
